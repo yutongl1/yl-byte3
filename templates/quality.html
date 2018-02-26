@@ -66,14 +66,14 @@
 		<div class='tableauPlaceholder' id='viz1519627352992' style='position: relative; width: 570px; height: 500px;' ><noscript><a href='#'><img alt='Sheet 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevelTimeLineforDataCompleteness&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BatteryLevelTimeLineforDataCompleteness&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevelTimeLineforDataCompleteness&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519627352992');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 		
         </br>         
-        The dots represent the observed data, and the line is the fitted trend. We can see that there is no observations from around 9:30 pm, Feb 20th to 11:20 am, Feb 21th. Simiarly, data is missing from to 1:40pm, Feb 23th to 12:25pm, Feb 24th. 
-        However, the data were missing for a valid reason: the battery was low and the phone shut down. (The battery status was not available for IOS users, thus I do not have a precise indicator for shutdown). The observations make sense because last week was a busy week for me. Since the phone was used mainly for entertainment, I did not check or charge the battery regularly. 
+        The dots represent the observed data, and the line is the fitted trend. We can see that there is no observations from around 9:30 pm, Feb 20th to 11:20 am, Feb 21th. Simiarly, data is missing from 1:40pm, Feb 23th to 12:25pm, Feb 24th. 
+        However, the data were missing for a valid reason: the battery was low and the phone shut down. (The battery status was not available for IOS users, thus I do not have a precise indicator for shutdown). The observations make sense because last week was a busy week for me. Since the phone was used mainly for entertainment, I did not check and charge the phone regularly. 
         </br> </br> 
-        There is also a Null category for wifi, which means that the phone was not connected to any wifi. On examination, we see that Null occurs mostly with CMU-SECURE. In other words, the phone was not connected wifi because I was on my way to school or home. 
+        There is also a Null category for wifi, which means that the phone was not connected to any wifi. On examination, we see that Null occurs mostly with CMU-SECURE. In other words, the phone was not connected to wifi because I was on my way to school or home. 
         </br> 
         </br> 
-        The dataset has a strong bias because it is my own personal data. It cannot be generalized to other people. It cannot even precisely represent my phone usage because the data was collected from my secondary phone only. 
-        But the dataset is appropriate if I only want to analysis the usage of my secondary mobile phone. 
+        The dataset has a strong bias because it is my own personal data. It cannot be generalized to represent other people's phone usage behavior. It cannot even represent my phone usage because the data was collected from my secondary phone only. 
+        But the dataset is appropriate if I want to analyze the usage of my secondary mobile phone alone. 
         </br> 
         </font></p>
     </div>
@@ -88,6 +88,7 @@
 		For example, the distribution of battery level is fairly even, with a mean around 53. It is less frequent to observe battery level greater than 90, 
 		because the phone is old, and the battery level tends to drops quickly after it is charged. The frequency tables shows that for the majority of time, 
 		I stayed at home, connecting to AntiNeuralNetwork or xfinitywifi. When I am at school (hour 11-20), then battery level tend to be higher (hour 13-20). 
+		Surprisingly, I do not observe a high correlation between screen status and hourly battery usage, probability because the phone was not unlocked frequently enough to distinguish the effect of unlocking the screen and using the phone. 
         </font></p>
     </div>
     
