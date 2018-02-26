@@ -44,30 +44,65 @@
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+      <div class="jumbotron", style="text-align:center">
+      	<h1 style="font-size:50px;">  Data Quality  </h1> 
       </div>
-
+		<p><font size = "4" face="verdana" color="#5f5f5f"> 
+      	To inspect the data qualities, I created statistical summary tables (mean, range, median) for the continuous variable (battery level), 
+      	and frequency tables for categorical variables (screen status and wifi). Histograms for continuous varibales and pie charts for categorical variables
+      	are created to display the data distribution and detect skewness. I also created zoomable timeline to see how battery level changes over time. 
+      	In addition, hourly battery level, screen status and wifi usage are inspected in attempt to detect any interesting patterns. 
+      	The three graphs all have hours on the horizontal axis, and are placed vertically for easier comparison. 
+		</font></p>
     
-      <div class="page-header">
-	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
-      </div>
-      
-      <div class="page-header">
-	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
-      </div>
+ 
+    <div class="page-header">
+        <h1> <font color = "#4e5a68">Completeness </font> </h1>
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+        
+		The dataset appears to be complete even though there is some missing data. If we examine the following graph
+		
+		
+		<div class='tableauPlaceholder' id='viz1519627352992' style='position: relative; width: 570px; height: 500px;' ><noscript><a href='#'><img alt='Sheet 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevelTimeLineforDataCompleteness&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BatteryLevelTimeLineforDataCompleteness&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevelTimeLineforDataCompleteness&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519627352992');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		
+        </br>         
+        The dots represent the observed data, and the line is the fitted trend. We can see that there is no observations from around 9:30 pm, Feb 20th to 11:20 am, Feb 21th. Simiarly, data is missing from to 1:40pm, Feb 23th to 12:25pm, Feb 24th. 
+        However, the data were missing for a valid reason: the battery was low and the phone shut down. (The battery status was not available for IOS users, thus I do not have a precise indicator for shutdown). The observations make sense because last week was a busy week for me. Since the phone was used mainly for entertainment, I did not check or charge the battery regularly. 
+        </br> </br> 
+        There is also a Null category for wifi, which means that the phone was not connected to any wifi. On examination, we see that Null occurs mostly with CMU-SECURE. In other words, the phone was not connected wifi because I was on my way to school or home. 
+        </br> 
+        </br> 
+        The dataset has a strong bias because it is my own personal data. It cannot be generalized to other people. It cannot even precisely represent my phone usage because the data was collected from my secondary phone only. 
+        But the dataset is appropriate if I only want to analysis the usage of my secondary mobile phone. 
+        </br> 
+        </font></p>
+    </div>
+    
+    
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Coherence </font> </h1>
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+		</br>
+		From both statistical and visual analysis, we found that the dataset makes sense relative to itself and meets the expectations.
+		The data values fall into appropriate range, and the distribution shapes for variables are resonable.
+		For example, the distribution of battery level is fairly even, with a mean around 53. It is less frequent to observe battery level greater than 90, 
+		because the phone is old, and the battery level tends to drops quickly after it is charged. The frequency tables shows that for the majority of time, 
+		I stayed at home, connecting to AntiNeuralNetwork or xfinitywifi. When I am at school (hour 11-20), then battery level tend to be higher (hour 13-20). 
+        </font></p>
+    </div>
+    
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Correctness </font> </h1>
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+        
+        
+		I verified the coherence and correctness of data using the statistical summary tables and the EDA plots. 
+		I tried to figure out whether the abnormality (e.g. missing data) is reasonable. I also examine other dataset such as battery_discharge, battery_charges, to verify the overall correctness of the data. 
+		
+			
+        </font></p>
+    </div>    
 
-      <div class="page-header">
-	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
-      </div>
 
     </div> <!-- /container -->
 

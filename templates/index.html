@@ -8,13 +8,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Index</title>
+    <title>Interactive Data Science: Byte 2</title>
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this project -->
     <link href="css/explore.css" rel="stylesheet">
+    
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
   </head>
   
   <body role="document">
@@ -32,9 +51,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="about">About This Data Set</a></li>
-	    <li><a href="quality">Data Quality</a></li>
+            <li class="active"> <a href="#", style="font-size: 15px">Home</a></li>
+            <li><a href="about", style="font-size: 15px">About This Data Set</a></li>
+	    <li><a href="quality", style="font-size: 15px">Data Quality</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -43,215 +62,215 @@
     <div class="container theme-showcase" role="main">
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-	<h1>Interactive Data Science Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Interactive Data Science class.</p>
+      <div class="jumbotron", style="text-align:center">
+      	<h1 style="font-size:50px;">  Mobile Data Statistics  </h1> 
+		<h2> <font color = "#4e5a68"> Interactive Data Science: Byte 3  </font> </h2>
+		<h3> <font color = "#4e5a68"> Yutong Li (yutongl1) </font> </h3>
       </div>
-      
-      <div class="page-header">
+   
+
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Major Question </font> </h1>
+    </div>  
+    
+    <p> <font size = "5" face="verdana" color="#5f5f5f"> What is the general pattern of my secondary mobile phone usage in terms of battery level? </font> </p>
+
+
+    
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Statistical Summary </font> </h1>
+    </div>  
+   	
+	<p> <font size = "5" face="verdana" color="#5f5f5f"> Statistical Summary of Battery Level </br> </font> 
 	
-      </div> <!-- /page-header -->
+	<table align = 'center' style="width:60%"">
+	
+    <tr>
+    	<th> </th>
+    	<th>Battery Level</th>    
+  	</tr>
+  	<tr>
+    	<td><b>Mean</b></td>  
+    	<td>53.3626</td>  
+  	</tr>
+  	<tr>
+    	<td><b>Median</b></td>
+    	<td>55</td>    
+  	</tr>
+  	<tr>
+    	<td><b>Range</b></td>
+    	<td>[0, 100]</td>  
+  	</tr>
+	</table>
+
+
+	<p> <font size = "5" face="verdana" color="#5f5f5f"> </br> Frequency Table of Wifi </br> </font> 
+	
+	<table align = 'center' style="width:60%"">
+  	<tr>
+    	<th> AntiNeuralNetworkl</th>    
+    	<th> CMU-SECURE </th> 
+    	<th> xfinitywifi </th> 
+    	<th> None </th> 
+  	</tr>
+  	<tr> 
+    	<td>4842</td>  
+    	<td>767</td>  
+    	<td>1078</td>  
+    	<td>225</td>
+  	</tr>
+	</table>
+
+	<p> <font size = "5" face="verdana" color="#5f5f5f"> </br> Frequency Table of Screen Status  </br> </font> 
+	
+	<table align = 'center' style="width:60%"">
+  	<tr>
+    	<th> Screen Status = "Locked" (2) </th>    
+    	<th>  Screen Status = "Locked" (3) </th> 
+  	</tr>
+  	<tr> 
+    	<td align="center" valign="middle">171</td>  
+	    <td align="center" valign="middle">26</td>  
+  	</tr>
+	</table>
+	<p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font> 
+	
+	
+   <div class="page-header">
+        <h1> <font color = "#4e5a68"> Distribution of Continuous Variables </font> </h1>
+    </div>
+    
+	<div class='tableauPlaceholder' id='viz1519613532608' style='position: relative; width: 570px; height: 500px;'><noscript><a href='#'><img alt='Histogram of Battery Level  ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofBatteryLevel&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HistogramofBatteryLevel&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofBatteryLevel&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519613532608');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	<div , style="text-align:center">
+    <h2> <font face="verdana" color="#5f5f5f"> </br> </br> Observed Battery Level From Feb 18 to Feb 25 </font> </h2>
+	<iframe  width="1200" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col2%2C+col4+from+1qTfTMqQKMvFMuq4F60T0r81kjkcrpk-yZd1uAZYG&amp;qrs=+where+col2+%3E%3D+&amp;qre=+and+col2+%3C%3D+&amp;qe=+order+by+col2+asc&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1200&amp;height=400"></iframe>  
+	</div>
+	
+	<p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font> 
+	
+	<div class="page-header", style="clear:both ">
+        <h1> <font color = "#4e5a68"> Distribution of Categorical Variables </font> </h1>
+    </div>
+    
+  
+    <div>
+	<iframe align = "left" width="570" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col5%2C+count()+from+10XJMRlIT-1nWGgQzZYHli5egACas14lOmeWIOH3F+group+by+col5+order+by+count()+asc+limit+10&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_is3D=false&amp;gco_pieHole=0&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_title=Pie+Chart+of+Wifi+Usage&amp;gco_fontName=sans-serif&amp;gco_pieSliceText=percentage&amp;gco_pieSliceTextStyle=%7B%22fontSize%22%3A%2214%22%7D&amp;gco_slices=%7B%220%22%3A%7B%22color%22%3A%22%238e7cc3%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23e06666%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%23f6b26b%22%7D%2C+%223%22%3A%7B%22color%22%3A%22%236d9eeb%22%7D%7D&amp;gco_legend=top&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%7D&amp;width=570&amp;height=500"></iframe>
+	</div>
+	
+    <div >
+    <iframe align = "right" width="570" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col4%2C+count()+from+1USbn26v05bMBIxSpc0ZzkmFFcJ6lRz2cfEeLBWXi+group+by+col4+order+by+col4+asc+limit+10&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_is3D=false&amp;gco_pieHole=0&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_slices=%7B%220%22%3A%7B%22color%22%3A%22%236d9eeb%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23f6b26b%22%7D%7D&amp;gco_title=Pie+Chart+of+Screen+Status&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%7D&amp;gco_fontName=sans-serif&amp;gco_pieSliceTextStyle=%7B%22fontSize%22%3A%2214%22%7D&amp;gco_legend=top&amp;width=570&amp;height=500"></iframe>
+	</div>
+	 
+	 <p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font> 
+	
+	
+    <div class="page-header" style="clear:both ">
+        <h1> <font color = "#4e5a68"> Interaction with Timeline </font> </h1>
+    </div>
+	<div class='tableauPlaceholder' id='viz1519621553901' style='position: relative; width: 570px; height: 500px;'><noscript><a href='#'><img alt='Median Battery Level by Hour ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevel&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BatteryLevel&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BatteryLevel&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519621553901');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>   
+		 <p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font>    
+	<div class='tableauPlaceholder' id='viz1519621680057' style='position: relative; width: 570px; height: 500px;'><noscript><a href='#'><img alt='Histogram of Network by Hour  ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofNetworkbyHour&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HistogramofNetworkbyHour&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofNetworkbyHour&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519621680057');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	 <p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font> 
+    <div class='tableauPlaceholder' id='viz1519621541505' style='position: relative; width: 870px; height: 800px;'><noscript><a href='#'><img alt='Histogram of Screen Status by Hours  ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofScreenStatusbyHours&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HistogramofScreenStatusbyHours&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hi&#47;HistogramofScreenStatusbyHours&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1519621541505');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p> <font size = "5" face="verdana" color="#5f5f5f"> </br>   </br> </font> </p>
+
+	 </div> <!-- /page-header -->
     </div> <!-- /container -->
-
-<svg></svg>
-
-<!-- STYLES FOR D3 -->
-<style>
-/* Styles for date/time chart */
-path { 
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
-}
-
-.axis path,
-.axis line {
-    fill: none;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
-}
-
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 60px;					
-    height: 28px;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
-}
-/* End styles for date/time chart */
-
-/* Styles for bar chart */
-.bar {
-  fill: steelblue;
-}
-.bar:hover {
-  fill: brown;
-}
-/* End styles for bar chart*/
-</style>
-
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
-    $( document ).ready(function() {
-	
-		/* Start date/time hover graph code
-		*/
-		
-		// Set the dimensions of the canvas / graph
-		var margin = {top: 30, right: 20, bottom: 30, left: 50},
-		    width = 600 - margin.left - margin.right,
-		    height = 270 - margin.top - margin.bottom;
-		
-		// Parse the date / time
-		var parseDate = d3.timeParse("%d-%b-%y");
-		var formatTime = d3.timeFormat("%e %B");
-		
-		// Set the x and y ranges
-		var x = d3.scaleTime().range([0, width]);
-		var y = d3.scaleLinear().range([height, 0]);
-		
-		// Define the axes
-		var xAxis = d3.axisBottom(x).ticks(5);
-		
-		var yAxis = d3.axisLeft(y).ticks(5);
-		
-		// Define the line we're going to draw via our data points
-		var valueline = d3.line()
-		    .x(function(d) { return x(d.date); })
-		    .y(function(d) { return y(d.close); });
-		
-		// Define the div for the tooltip
-		var div = d3.select("body").append("div")	
-		    .attr("class", "tooltip")				
-		    .style("opacity", 0);
-		
-		// Adds the svg canvas
-		var svg = d3.select("body")
-		    .append("svg")
-		        .attr("width", width + margin.left + margin.right)
-		        .attr("height", height + margin.top + margin.bottom)
-		    .append("g")
-		        .attr("transform", 
-		              "translate(" + margin.left + "," + margin.top + ")");
-		
-		// Get the data
-		d3.csv("css/walk.csv", function(error, data) {
-		    data.forEach(function(d) {
-		        d.date = parseDate(d.date);
-		        d.close = +d.close;
-				console.log('d.date: ' + d.date + ', d.close: ' + d.close);
-		    });
-		
-		    // Scale the range of the data
-		    x.domain(d3.extent(data, function(d) { return d.date; }));
-		    y.domain([0, d3.max(data, function(d) { return d.close; })]);
-		
-		    // Add the valueline path.
-		    svg.append("path")
-		        .attr("class", "line")
-		        .attr("d", valueline(data));
-		
-		    // Add the scatterplot
-		    svg.selectAll("dot")	
-		        .data(data)			
-		    .enter().append("circle")								
-		        .attr("r", 5)		
-		        .attr("cx", function(d) { return x(d.date); })		 
-		        .attr("cy", function(d) { return y(d.close); })		
-		        .on("mouseover", function(d) {		
-		            div.transition()		
-		                .duration(200)		
-		                .style("opacity", .9);		
-		            div	.html(formatTime(d.date) + "<br/>"  + d.close)	
-		                .style("left", (d3.event.pageX) + "px")		
-		                .style("top", (d3.event.pageY - 28) + "px");	
-		            })					
-		        .on("mouseout", function(d) {		
-		            div.transition()		
-		                .duration(500)		
-		                .style("opacity", 0);	
-		        });
-		
-		    // Add the X Axis
-		    svg.append("g")
-		        .attr("class", "x axis")
-		        .attr("transform", "translate(0," + height + ")")
-		        .call(xAxis);
-		
-		    // Add the Y Axis
-		    svg.append("g")
-		        .attr("class", "y axis")
-		        .call(yAxis);
-		});
-		//End date/time hover graph
-		
+	function updateTable(str) {
+		console.log("in updateTable");
+		console.log(str);
 
-	
-	/*  Code for the bar chart, remove the surrounding comment markers to display.
-		When doing so, be sure to delete this text and comment out the above chart
-		
-		
-		var bar_svg = d3.select("svg").attr("width", 1200).attr("height", 1200),
-		    margin = {top: 20, right: 20, bottom: 30, left: 40},
-		    width = +bar_svg.attr("width") - margin.left - margin.right,
-		    height = +bar_svg.attr("height") - margin.top - margin.bottom;
-	
-		var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
-		    y = d3.scaleLinear().rangeRound([height, 0]);
-		
-		var g = bar_svg.append("g")
-		    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-		
-		d3.csv("css/sports.csv", function(d) {//d3.tsv("data.tsv", function(d) {
-		  //d.Year = +d.Year;
-		  d.Year = parseInt(d["Average attendance"].replace(',',''));
-		  return d;
-		}, function(error, data) {
-		  if (error) throw error;
-		
-		  x.domain(data.map(function(d) { return d.Tournament; }));
-		  y.domain([0, d3.max(data, function(d) { return d.Year; })]);
-		
-		  //Defines the X axis
-		  g.append("g")
-		      .attr("class", "axis axis--x")
-		      .attr("transform", "translate(0," + height + ")")
-		      .call(d3.axisBottom(x));
-		
-		  //Defines the Y axis
-		  g.append("g")
-		      .attr("class", "axis axis--y")
-		      .call(d3.axisLeft(y).ticks(10, "s"))
-		    .append("text")
-		      .attr("transform", "rotate(-90)")
-		      .attr("y", 6)
-		      .attr("dy", "0.71em")
-		      .attr("text-anchor", "end")
-		      .text("Year");
-		
-		  g.selectAll(".bar")
-		    .data(data)
-		    .enter().append("rect")
-		      .attr("class", "bar")
-		      .attr("x", function(d) { return x(d.Tournament); })
-		      .attr("y", function(d) { return y(d.Year); })
-		      .attr("width", x.bandwidth())
-		      .attr("height", function(d) { return height - y(d.Year); });
-		}); */ 
-		//End bar chart code
-		
-	}); //End document ready			   
+	    // error checking: ignore buttons that don't have a title!
+		if (str == "") {
+			return;
+		}
+
+	    // find the actual button in this document's HTML
+		button = document.getElementById(str);
+		// for debugging, write its name to the console
+		console.log(button.className);
+		// check if it is disabled (btn-info)
+		if (button.className.includes("btn-info")) {
+			// and enable it (btn-primary)
+			button.className = "btn btn-space btn-primary";
+		} else {
+			// otherwise disable it (btn-info)
+			button.className = "btn btn-space btn-info";
+		}
+
+		// now get all the buttons
+		buttons = document.getElementById("headers").children;
+		// and collect their names in cols
+		cols = [];
+		// loop through them
+		for (button in buttons) {
+			// grab the id (the name we need is there)
+			id = buttons[button].id;
+			// make sure it isn't null
+			if (buttons[button].id != null) {
+				// and that the button is selected 
+				var isPrimary = buttons[button].className.includes("btn-primary");
+				if (isPrimary && (cols.indexOf(id) == -1)) {
+					// if so, add it to our array
+					cols.push(id);
+				}
+			}
+		}
+					
+		$.ajax({
+			url: '/_update_table',
+			dataType: 'json',
+			contentType: 'application/json',
+			data: JSON.stringify({'cols' : cols}),
+			type: 'POST',
+			success: function (res, status) {
+				console.log("successrunning");
+				console.log(res["content"]);
+				console.log(res["headers"]);
+				var cols = res["headers"];
+				var rows = res["content"];
+
+				// get the table, columns and rows
+				table = document.getElementById("data");
+				headers = document.getElementById("cols");
+				body = document.getElementById("rows");
+
+				// delete current contents
+				headers.innerHTML='';
+				body.innerHTML = '';
+
+				// and put the new information in the table
+				for (col in cols) {
+					cell = document.createElement("th");
+					cell.innerHTML = cols[col];
+					headers.appendChild(cell);
+				}
+				for (row in rows) {
+					tr = document.createElement("tr");
+					for (item in rows[row]) {
+						td = document.createElement("td");
+						td.innerHTML = rows[row][item];
+						tr.appendChild(td);
+					}
+					body.appendChild(tr);
+				}
+			},
+			error: function(res, status) {
+				// On Error
+				alert('error');
+			}
+		});
+	}
+				
+				   
+				   
 </script>
 </body>
 </html>

@@ -45,22 +45,51 @@
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-	<h1>Accountability: About This Data Set</h1>
-        <p>Write a brief summary about the data set here</a></p>
+      <div class="jumbotron", style="text-align:center">
+      	<h1 style="font-size:50px;">  Accountability  </h1> 
+		<h3> <font color = "#4e5a68"> Acknowledgemend </font> </h3>
       </div>
-
     
-      <div class="page-header">
-	<h2>Where did this data come from?</h2>
-	<p>fill in</p>
-      </div>
-      
-      <div class="page-header">
-	<h2>Who has access to it?</h2>
-	<p>fill in</p>
-      </div>
+    
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Source of Dataset </font> </h1>
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+        
+        The data is collected by AWARE, which captures hardware and human-based data. The data was collected from my personal iphone from Feb 18th to Feb 25th. I used my second mobile phone for data collection instead of my primary one. 
+        
+        </font></p>
+    </div>
+    
 
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Accessibility of the Dataset </font> </h1>
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+        
+        I have the full control over the study, and the data is about my personal mobile phone usage. Therefore, I should be the only one who is able to access the dataset. However, while AWARE claims that they "do not log personal information, such as phone numbers or contacts information", it is not clear if they can access the usage data of individuals. 
+		</font></p>
+        
+    </div>
+    
+    
+    <div class="page-header">
+        <h1> <font color = "#4e5a68"> Summary of the Dataset </font> </h1>
+        
+
+        
+        <p><font size = "4" face="verdana" color="#5f5f5f"> 
+        The data is collected from my second phone from Feb 18th to Feb 25th, which is mainly used for entertainment, twitter, Instagrams, etc. (I use my primary phone only for work and study for the sake of self control). 
+		The analysis focuses on 3 sensors battery, screen, and wifi. Interesting variables include </br>
+		
+        </br>
+        <b> Battery Level </b>  - Battery level in range 0 to 100  </br>
+		<b> Wifi </b> -  There are 3 possibilities to 1) the phone connects to CMU-SECURE when at school or 2) connects to AntiNeuralNetwork (this is the name of my home wifi) or xfinitywifi when at home 3) None if no wifi is available </br>
+		<b> Screen Status </b>  - one of the following: 0=off, 1=on, 2=locked, 3=unlocked </br>
+		<b> Timestamp </b> - the timestamp in format '%Y-%m-%d %H:%M:%S' for the collected data </br>		 	
+		</font></p>
+		
+		Note that consecutive data with exactly the same time stamps are marked as duplicates,  are removed during data pre-processing. 
+    </div>
+        
 
     </div> <!-- /container -->
 
